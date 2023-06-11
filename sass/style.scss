@@ -20,6 +20,26 @@ background-color: #333;
     margin: 0 auto;
 }
 
+.header {
+    padding: 3rem 3rem;
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__logo {
+        margin-bottom: 4rem;
+        img {
+            width: 40%;
+        }
+    }
+
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
 
 
 

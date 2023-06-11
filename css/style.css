@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -17,4 +18,29 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+.header {
+  padding: 3rem 3rem;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__logo {
+  margin-bottom: 4rem;
+}
+.header__logo img {
+  width: 40%;
+}
+.header__img img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url("../images/bg-desktop.svg");
+  }
+  .header__logo img {
+    width: 15%;
+  }
 }/*# sourceMappingURL=style.css.map */
