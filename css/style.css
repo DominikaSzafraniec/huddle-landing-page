@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #333;
+  background-color: hsl(257, 40%, 49%);
 }
 
 .wrapper {
@@ -25,9 +25,11 @@ body {
   background-image: url("../images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 .header__logo {
   margin-bottom: 4rem;
+  text-align: left;
 }
 .header__logo img {
   width: 40%;
@@ -35,12 +37,108 @@ body {
 .header__img img {
   width: 100%;
 }
+.header__title {
+  margin: 4rem 0 2rem 0;
+  color: white;
+  font-size: 2.2rem;
+}
+.header__description {
+  color: whitesmoke;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.header__btn-register {
+  margin: 2.5rem 0 7rem 0;
+  padding: 1.5rem 3rem;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.header__btn-register:hover {
+  background-color: hsl(300, 69%, 71%);
+}
+.header__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.header__social:hover {
+  background-color: hsl(300, 69%, 71%);
+}
+.header__icon {
+  font-size: 1.8rem;
+}
 
 @media (min-width: 768px) {
   .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background-image: url("../images/bg-desktop.svg");
+    height: 100vh;
   }
   .header__logo img {
     width: 15%;
+  }
+  .header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    padding: 10rem 0;
+  }
+  .header__img {
+    width: 48%;
+  }
+  .header__info {
+    width: 48%;
+  }
+  .header__socials {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .header__title {
+    font-size: 5rem;
+  }
+  .header__description {
+    font-size: 1.8rem;
+  }
+  .header__btn-register {
+    font-size: 1.8rem;
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,11 +1,49 @@
 @media(min-width: 768px) {
   .header {
+    display: flex;
     background-image: url('../images/bg-desktop.svg');
+    height: 100vh;
 
     &__logo {
       img {
         width: 15%;
       }
+    }
+
+    &__box {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 10rem 0;
+    }
+
+    &__img {
+      width: 48%;
+    }
+
+    &__info {
+      width: 48%;
+    }
+
+    &__socials {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__description {
+      font-size: 1.8rem;
+    }
+
+    &__btn-register {
+      font-size: 1.8rem;
+      width: 50%;
     }
   }
 }

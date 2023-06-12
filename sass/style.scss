@@ -1,3 +1,6 @@
+$violet: hsl(257, 40%, 49%);
+$softMagenta: hsl(300, 69%, 71%);
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +13,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-// font-family: 'Poppins', sans-serif;
-background-color: #333;
+    background-color: $violet;
 }
 
 .wrapper {
@@ -25,9 +27,11 @@ background-color: #333;
     background-image: url('../images/bg-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 
     &__logo {
         margin-bottom: 4rem;
+        text-align: left;
         img {
             width: 40%;
         }
@@ -37,6 +41,61 @@ background-color: #333;
         img {
             width: 100%;
         }
+    }
+
+    &__title {
+        margin: 4rem 0 2rem 0;
+        color: white;
+        font-size: 2.2rem;
+    }
+
+    &__description {
+        color: whitesmoke;
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    &__btn-register {
+        margin: 2.5rem 0 7rem 0;
+        padding: 1.5rem 3rem;
+        width: 70%;
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        color: $violet;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: $softMagenta;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: $softMagenta;
+        }
+    }
+
+    &__icon {
+        font-size: 1.8rem;
     }
 }
 
